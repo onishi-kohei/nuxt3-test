@@ -1,0 +1,9 @@
+{
+    "name": "app",
+    "remotes": {},
+    "version": "1.0.235",
+    "lanes": {
+        "current": "main",
+        "tracking": []
+    }
+}
