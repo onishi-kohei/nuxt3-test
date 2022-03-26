@@ -14,7 +14,7 @@ declare module 'vite' {
 
 export default defineNuxtConfig({
   css: ['@/assets/css/tailwind.css', 'vuetify/styles'],
-  buildModules: ['@nuxtjs/tailwindcss'],
+  buildModules: ['@nuxtjs/tailwindcss', '@pinia/nuxt'],
   build: {
     transpile: []
   },
