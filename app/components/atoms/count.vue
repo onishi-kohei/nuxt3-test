@@ -3,17 +3,9 @@
     <h1>INDEX</h1>
     <div class="text-red-700">{{ state.count }}</div>
     <button @click="counterStore.countUp">countUp</button>
-
-    <div>atom</div>
-    <AtomsCount />
-    <NuxtLink to="/filter"> link to filter</NuxtLink>
-    <div>Mouse position is at: {{ x }}, {{ y }}</div>
-    <div>useFetch test: {{ data.counter }}</div>
   </div>
 </template>
 <script setup lang="ts">
 const counterStore = useCounterStore();
 const { state } = counterStore;
-const { x, y } = useMouse()
-const { data } = await useFetch('/api/count')
 </script>
